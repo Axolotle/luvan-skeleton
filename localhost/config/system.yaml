@@ -1,0 +1,16 @@
+twig:
+  debug: true
+  auto_reload: true
+
+assets:
+  css_pipeline: false
+  js_pipeline: false
+
+errors:
+  display: 1
+
+debugger:
+  enabled: true
+
+session:
+  secure: false

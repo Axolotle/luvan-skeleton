@@ -1,0 +1,40 @@
+languages:
+  supported:
+    - fr
+  include_default_lang: false
+
+home:
+  alias: '/home'
+
+pages:
+  theme: luvan
+  markdown:
+    extra: true
+    auto_line_breaks: true
+
+cache:
+  enabled: true
+  check:
+    method: file # may use 'folder' for faster check
+
+twig:
+  cache: true
+  debug: false
+  auto_reload: false
+
+assets:
+  css_pipeline: true
+  css_minify: true
+  js_pipeline: true
+  js_minify: true
+
+debugger:
+  enabled: false
+
+session:
+  secure: true
+
+gpm:
+  releases: stable
+  verify_peer: true
+  official_gpm_only: false
