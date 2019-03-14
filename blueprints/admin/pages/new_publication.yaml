@@ -1,0 +1,44 @@
+form:
+  validation: loose
+  fields:
+    section:
+        type: section
+        title: BLUEPRINTS.PUBLICATION.ADD
+
+    title:
+      type: text
+      label: BLUEPRINTS.PUBLICATION.TITLE
+      help: BLUEPRINTS.PUBLICATION.TITLE_HELP
+      validate:
+        required: true
+
+    folder:
+      type: hidden
+      default: '@slugify-title'
+
+    route:
+      type: hidden
+      default: /publications
+
+    name:
+      type: hidden
+      default: 'publication'
+
+    type:
+      type: select
+      label: BLUEPRINTS.PUBLICATION.TYPE
+      help: BLUEPRINTS.PUBLICATION.TYPE_HELP
+      options:
+        'text': TYPES.TEXT
+        'sound': TYPES.SOUND
+        'gallery': TYPES.GALLERY
+        'video': TYPES.VIDEO
+      validate:
+        required: true
+
+    visible:
+      type: hidden
+      default: true
+
+    blueprint:
+      type: blueprint

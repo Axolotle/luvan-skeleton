@@ -1,0 +1,43 @@
+form:
+  validation: loose
+  fields:
+    section:
+        type: section
+        title: BLUEPRINTS.BLOG.ADD
+
+    title:
+      type: text
+      label: BLUEPRINTS.BLOG.TITLE
+      help: BLUEPRINTS.BLOG.TITLE_HELP
+      validate:
+        required: true
+
+    folder:
+      type: hidden
+      default: '@slugify-title'
+
+    route:
+      type: hidden
+      default: /blog
+
+    name:
+      type: hidden
+      default: 'post'
+
+    type:
+      type: select
+      label: BLUEPRINTS.BLOG.TYPE
+      help: BLUEPRINTS.BLOG.TYPE_HELP
+      options:
+        'post': TYPES.POST
+        'short': TYPES.SHORT
+        'notice': TYPES.NOTICE
+      validate:
+        required: true
+
+    visible:
+      type: hidden
+      default: true
+
+    blueprint:
+      type: blueprint

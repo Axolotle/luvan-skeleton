@@ -4,7 +4,7 @@ languages:
   include_default_lang: false
 
 home:
-  alias: '/home'
+  alias: '/blog'
 
 pages:
   theme: luvan

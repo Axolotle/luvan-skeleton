@@ -6,3 +6,4 @@ metadata:
     description: ''
     keywords: ''
     'og:type': 'website'
+taxonomies: [type, work]
