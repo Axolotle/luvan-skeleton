@@ -3,11 +3,11 @@ form:
   fields:
     section:
         type: section
-        title: BLUEPRINTS.BLOG.ADD
+        title: BLUEPRINTS.PROJECT.ADD
 
     title:
       type: text
-      label: BLUEPRINTS.BLOG.TITLE
+      label: BLUEPRINTS.PROJECT.TITLE
       validate:
         required: true
 
@@ -16,23 +16,16 @@ form:
       default: '@slugify-title'
 
     route:
-      type: hidden
-      default: /blog
+      type: select
+      label: BLUEPRINTS.PROJECT.TYPE
+      data-options@: ['\Grav\Theme\Luvan::children', '/portfolio']
+      help: BLUEPRINTS.PROJECT.TYPE_HELP
+      validate:
+        required: true
 
     name:
       type: hidden
-      default: 'post'
-
-    type:
-      type: select
-      label: BLUEPRINTS.BLOG.TYPE
-      help: BLUEPRINTS.BLOG.TYPE_HELP
-      options:
-        'post': TYPES.POST
-        'short': TYPES.SHORT
-        'notice': TYPES.NOTICE
-      validate:
-        required: true
+      default: 'project'
 
     visible:
       type: hidden

@@ -18,3 +18,7 @@ add_modals:
     label: Add Carnet Page
     blueprint: admin/pages/new_publication
     show_in: bar
+  -
+    label: Add Project Page
+    blueprint: admin/pages/new_project
+    show_in: bar

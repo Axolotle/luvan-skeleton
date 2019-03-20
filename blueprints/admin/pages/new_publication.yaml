@@ -8,7 +8,6 @@ form:
     title:
       type: text
       label: BLUEPRINTS.PUBLICATION.TITLE
-      help: BLUEPRINTS.PUBLICATION.TITLE_HELP
       validate:
         required: true
 
