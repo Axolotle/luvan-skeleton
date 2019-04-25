@@ -6,4 +6,4 @@ metadata:
     description: ''
     keywords: ''
     'og:type': 'website'
-taxonomies: [type, work]
+taxonomies: [page_type, type, project, tag]
